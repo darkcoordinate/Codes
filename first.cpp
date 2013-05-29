@@ -32,5 +32,6 @@ int main()
     h1->x = 1;
     h1->y = NULL;
     addpoint(h1, 4);
+    Console::WriteLine("the two numbers are {0} and{1}", h1->i,h1->y->i)
     return 0;
 }
