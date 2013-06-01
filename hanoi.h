@@ -47,6 +47,13 @@ public:
         delete p1;
         delete p2;
         delete p3;
-    }   
+    }
+    
+    int getopoint ( point^ l1)
+    {
+        point^ topointer;
+        for( topointer = list ; topointer != nullptr; topointer = topointer->j);
+        return topointer->i;
+    }
 };
 
