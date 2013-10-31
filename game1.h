@@ -10,4 +10,5 @@ public:
   ~vector();
   vector operator+(vector v);
   vector operator=(vector v);
+  static double* vertexarry();
 };
