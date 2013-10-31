@@ -6,7 +6,7 @@ public:
   double vx;
   double vy;
   double vz;
-  vector (x , y, z);
+  vector (double x ,double y ,double z);
   ~vector();
   vector operator+(vector v);
   vector operator=(vector v);
