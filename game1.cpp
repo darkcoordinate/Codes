@@ -22,6 +22,14 @@ vector vector :: operator+(vector v1)
   retrun v;
 }
 
+vector vector :: operator= (vector v1)
+{
+  vx = v1.vx;
+  vy = v1.vy;
+  vz = v1.vz;
+  
+}
+
 static double* vector :: vertexarry()
 {
   double* point;
