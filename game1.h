@@ -9,5 +9,5 @@ public:
   vector (x , y, z);
   ~vector();
   vector operator+(vector v);
-  
+  vector operator=(vector v);
 };
