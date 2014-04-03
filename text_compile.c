@@ -81,7 +81,13 @@ void makechar_word(point* list, int size, char* cha)
 	list->a = (int)cha[1];
 	list->next = NULL;
 	list->prev = NULL;
-
+	list->indx = 0;
+	point* p1;
+	p1 = list;
+	while(p1->next != NULL)
+	{
+		p1
+	}
 	
 void listtree(point* list, int a)
 {
