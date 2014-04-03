@@ -77,6 +77,7 @@ void addpoint_to_point2(point2* list, point* list_point)
 
 void makechar_word(point* list, int size, char* cha)
 {
+	//this function makes the linked list of the char string in the 
 	list = (point*)malloc(sizeof(point));
 	list->a = (int)cha[1];
 	list->next = NULL;
@@ -84,11 +85,24 @@ void makechar_word(point* list, int size, char* cha)
 	list->indx = 0;
 	point* p1;
 	p1 = list;
-	while(p1->next != NULL)
+	t i = 1;
+	for(i = 1; i < size, i++)
 	{
-		p1
+		while(p1->next != NULL)
+		{
+			p1 = p1->next;
+		}
+		point* p2 = (point*)malloc(sizeof(point));
+		p2->a = (int)cha[i];
+		p2->prev = p1;
+		p2->next = NULL;
+		p1->next = p2;
+		p1 = NULL;
+		p2 = NULL;
 	}
-	
+}
+
+
 void listtree(point* list, int a)
 {
 	point* p1;
